@@ -1,0 +1,42 @@
+// Place all the styles related to the restaurants controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  position: sticky;
+  background-color: #E3E7F1;
+  border-bottom: black;
+}
+
+.index {
+  padding: 20px;
+}
+
+
+.form {
+padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+li a {
+  color: black;
+  &:hover{
+  text-decoration: none;
+}
+}
+
+.show{
+padding: 20px;
+}
+
+h6 {
+border-bottom: black;
+}
+
+.all_resto {
+  display: flex;
+}

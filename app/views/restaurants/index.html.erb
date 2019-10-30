@@ -1,0 +1,9 @@
+<%= render 'navbar' %>
+<div class="index">
+<h1>List of restaurants</h1>
+<ul class="all_resto">
+<% @restaurants.each do |restaurant| %>
+  <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+  <% end %>
+</ul>
+</div>

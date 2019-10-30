@@ -1,0 +1,25 @@
+<%= render 'navbar' %>
+<div class="show">
+<h1>
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+</h1>
+
+<p>
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @restaurant.category %>
+</p>
+
+<h6>All <%= @restaurant.name %>'s Reviews</h6>
+
+<%= link_to "Add Your Review", new_restaurant_review_path(@restaurant), class: "btn btn-danger" %>
+
+<% @restaurant.reviews.each do |review| %>
+  <p><%= review.content %>     <%= review.rating %></p>
+<% end %>
+</div>
